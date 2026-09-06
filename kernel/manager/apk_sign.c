@@ -382,6 +382,10 @@ bool is_manager_apk(char *path)
 	if (check_v2_signature(path, 0x396, "f415f4ed9435427e1fdf7f1fccd4dbc07b3d6b8751e4dbcec6f19671f427870b"))
 		return true;
 
+	// RapliVx/KernelSU
+	if (check_v2_signature(path, 0x384, "a9462b8b98ea1ca7901b0cbdcebfaa35f0aa95e51b01d66e6b6d2c81b97746d8"))
+        return true;
+	
     // 5ec1cff/KernelSU
 	if (check_v2_signature(path, 384, "7e0c6d7278a3bb8e364e0fcba95afaf3666cf5ff3c245a3b63c8833bd0445cc4"))
 		return true;
