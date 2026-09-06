@@ -381,7 +381,8 @@ bool is_manager_apk(char *path)
 	// pershoot/KernelSU-Next
     if (check_v2_signature(path, 0x338, "f26471a28031130362bce7eebffb9a0b8afc3095f163ce0c75a309f03b644a1f"))
         return true;
-	
+
+	// rsuntk/KernelSU
 	if (check_v2_signature(path, 0x396, "f415f4ed9435427e1fdf7f1fccd4dbc07b3d6b8751e4dbcec6f19671f427870b"))
 		return true;
 
